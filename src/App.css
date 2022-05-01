@@ -1,1 +1,12 @@
+html {
+  --color-text-dark: "#262626";
+  --color-text-dark-light: "#262626";
+  --color-bg-white: "#FFFFFF";
+  --color-bg-grey: "#F8F9FA";
+  --color-bg-blue: "#00A5E5";
+  --color-bg-light-blue: "#E5F6FD";
+}
 
+body {
+  background-color: var(--color-bg-grey);
+}

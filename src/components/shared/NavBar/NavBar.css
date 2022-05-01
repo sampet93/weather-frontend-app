@@ -1,0 +1,11 @@
+h1 {
+  font-size: 23px;
+  color: var(--color-text-dark);
+  margin: 0.75em;
+}
+
+.top-header {
+  display: flex;
+  justify-content: center;
+  background-color: var(--color-bg-white);
+}
