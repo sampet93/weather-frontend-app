@@ -22,7 +22,7 @@ function App() {
         <Grid container xs={12} justifyContent="center">
           <DropDown />
         </Grid>
-        <Grid container xs={12}>
+        <Grid container xs={12} justifyContent="center">
           <WeatherInfo />
           <WeatherInfo />
           <WeatherInfo />

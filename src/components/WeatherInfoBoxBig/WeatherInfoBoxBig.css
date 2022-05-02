@@ -3,10 +3,9 @@
   background-color: var(--color-bg-white);
   border: var(--container-border-width) solid var(--color-edge);
   border-radius: var(--container-border-radius);
+  margin: var(--container-margin) 0px;
 }
-.flex-container {
-  display: flex;
-}
+
 .top-left-container {
   justify-content: left;
   text-align: left;

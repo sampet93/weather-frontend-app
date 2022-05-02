@@ -16,6 +16,7 @@ html {
   --container-max-width: 500px;
   --container-border-radius: 5px;
   --container-border-width: 1px;
+  --container-margin: 10px;
 }
 
 body {
