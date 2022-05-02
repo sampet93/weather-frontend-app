@@ -1,3 +1,24 @@
+p {
+  font-size: 13px;
+  color: var(--color-text-dark-light);
+  margin: 0px;
+  padding: 0px;
+}
+
+h2 {
+  font-size: 19px;
+  color: var(--color-text-dark);
+  margin: 0px;
+  padding: 0px;
+}
+
+h3 {
+  font-size: 15px;
+  color: var(--color-text-dark);
+  margin: 0px;
+  padding: 0px;
+}
+
 .parent-container {
   max-width: var(--container-max-width);
   background-color: var(--color-bg-white);
@@ -9,6 +30,7 @@
 .top-left-container {
   justify-content: left;
   text-align: left;
+  margin: 15px;
 }
 .top-right-container {
   justify-content: right;
@@ -17,8 +39,10 @@
 .bottom-right-container {
   justify-content: right;
   text-align: right;
+  margin: 15px;
 }
 .bottom-left-container {
   justify-content: left;
   text-align: left;
+  margin: 15px;
 }
