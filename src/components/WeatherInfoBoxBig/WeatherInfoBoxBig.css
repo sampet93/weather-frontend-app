@@ -1,5 +1,8 @@
 .parent-container {
-  max-width: 400px;
+  max-width: var(--container-max-width);
+  background-color: var(--color-bg-white);
+  border: var(--container-border-width) solid var(--color-edge);
+  border-radius: var(--container-border-radius);
 }
 .flex-container {
   display: flex;

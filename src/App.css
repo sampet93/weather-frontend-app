@@ -1,10 +1,21 @@
+.flex-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
 html {
-  --color-text-dark: "#262626";
-  --color-text-dark-light: "#262626";
-  --color-bg-white: "#FFFFFF";
-  --color-bg-grey: "#F8F9FA";
-  --color-bg-blue: "#00A5E5";
-  --color-bg-light-blue: "#E5F6FD";
+  --color-text-dark: #262626;
+  --color-text-dark-light: #262626;
+  --color-bg-white: #ffffff;
+  --color-bg-grey: #f8f9fa;
+  --color-bg-blue: #00a5e5;
+  --color-bg-light-blue: #e5f6fd;
+  --color-edge: #e6e6e6;
+
+  --container-max-width: 500px;
+  --container-border-radius: 5px;
+  --container-border-width: 1px;
 }
 
 body {

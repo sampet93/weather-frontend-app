@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Grid } from "@mui/material";
 import NavBar from "./components/NavBar/NavBar";
 import DropDown from "./components/DropDown/DropDown";
 import WeatherInfo from "./components/WeatherInfo/WeatherInfo";
@@ -15,11 +16,19 @@ function App() {
   }, []);
 
   return (
-    <div>
+    <>
       <NavBar header="Säätutka" />
-      <DropDown />
-      <WeatherInfo />
-    </div>
+      <Grid container>
+        <Grid container xs={12} justifyContent="center">
+          <DropDown />
+        </Grid>
+        <Grid container xs={12}>
+          <WeatherInfo />
+          <WeatherInfo />
+          <WeatherInfo />
+        </Grid>
+      </Grid>
+    </>
   );
 }
 

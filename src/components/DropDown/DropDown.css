@@ -2,4 +2,9 @@
   display: flex;
   justify-content: center;
   background-color: var(--color-bg-white);
+  margin: 20px 0px;
+  width: 100%;
+  max-width: var(--container-max-width);
+  border: var(--container-border-width) solid var(--color-edge);
+  border-radius: var(--container-border-radius);
 }
