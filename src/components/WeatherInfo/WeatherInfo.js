@@ -7,21 +7,11 @@ import "./WeatherInfo.css";
 
 const WeatherInfo = () => {
   return (
-    <Grid
-      container
-      justifyContent="center"
-      flexDirection="row"
-      className="weather-info-container"
-    >
+    <Grid container justifyContent="center" flexDirection="row" className="weather-info-container">
       <Grid container xs={12} justifyContent="center">
         <WeatherInfoBoxBig />
       </Grid>
-      <Grid
-        container
-        xs={12}
-        flexDirection="row"
-        justifyContent="space-between"
-      >
+      <Grid container xs={12} flexDirection="row" justifyContent="space-between">
         <Grid item xs="auto">
           <WeatherInfoBoxSmall />
         </Grid>
