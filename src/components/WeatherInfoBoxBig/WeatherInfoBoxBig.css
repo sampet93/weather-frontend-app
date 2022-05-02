@@ -1,0 +1,22 @@
+.parent-container {
+  max-width: 400px;
+}
+.flex-container {
+  display: flex;
+}
+.top-left-container {
+  justify-content: left;
+  text-align: left;
+}
+.top-right-container {
+  justify-content: right;
+  text-align: right;
+}
+.bottom-right-container {
+  justify-content: right;
+  text-align: right;
+}
+.bottom-left-container {
+  justify-content: left;
+  text-align: left;
+}

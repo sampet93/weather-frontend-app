@@ -1,4 +1,5 @@
 import React from "react";
+import { Grid } from "@mui/material";
 import WeatherInfoBoxSmall from "../WeatherInfoBoxSmall/WeatherInfoBoxSmall";
 import WeatherInfoBoxBig from "../WeatherInfoBoxBig/WeatherInfoBoxBig";
 
@@ -6,10 +7,10 @@ import "./WeatherInfo.css";
 
 const WeatherInfo = () => {
   return (
-    <div>
+    <Grid container justifyContent="center">
       <WeatherInfoBoxBig />
       <WeatherInfoBoxSmall />
-    </div>
+    </Grid>
   );
 };
 
