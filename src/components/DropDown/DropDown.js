@@ -5,6 +5,7 @@ const DropDown = () => {
   return (
     <div className="dropdown-container">
       <select name="locations" id="locations">
+        <option value="all">Kaikki</option>
         <option value="tampere">Tampere</option>
         <option value="jyvaskyla">Jyväskylä</option>
         <option value="kuopio">Kuopio</option>
