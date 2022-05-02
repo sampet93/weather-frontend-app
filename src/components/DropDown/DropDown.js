@@ -4,7 +4,7 @@ import "./DropDown.css";
 const DropDown = () => {
   return (
     <div className="dropdown-container">
-      <select name="locations" id="locations">
+      <select name="locations" id="locations" className="test">
         <option value="all">Kaikki kaupungit</option>
         <option value="tampere">Tampere</option>
         <option value="jyvaskyla">Jyväskylä</option>

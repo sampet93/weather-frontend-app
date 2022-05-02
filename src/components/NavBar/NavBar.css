@@ -8,5 +8,5 @@ h1 {
   display: flex;
   justify-content: center;
   background-color: var(--color-bg-white);
-  border: solid 1px var(--color-edge);
+  border: solid var(--container-border-width) var(--color-edge);
 }

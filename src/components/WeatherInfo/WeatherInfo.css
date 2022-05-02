@@ -1,3 +1,4 @@
 .weather-info-container {
   max-width: var(--container-max-width);
+  margin: var(--container-margin);
 }

@@ -8,3 +8,11 @@
   border: var(--container-border-width) solid var(--color-edge);
   border-radius: var(--container-border-radius);
 }
+
+.test {
+  font-size: var(--font-size-small);
+  color: var(--color-text-dark);
+  border: none;
+  width: 100%;
+  padding: 10px;
+}

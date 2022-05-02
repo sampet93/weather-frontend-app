@@ -7,18 +7,19 @@ const WeatherInfoBoxBig = () => {
     <Grid container justifyContent="center" className="parent-container">
       <Grid container xs={6} flexDirection="column">
         <div className="top-left-container">
-          <h2>Helsinki</h2>
+          <h3>Helsinki</h3>
           <p>Scattered clouds</p>
         </div>
       </Grid>
       <Grid container xs={6} justifyContent="right">
         <div className="top-right-container">
-          <h2>Testi</h2>
+          <img src="https://openweathermap.org/img/wn/01n@2x.png" />
+          <h1>0 C</h1>
         </div>
       </Grid>
       <Grid container xs={6}>
         <div className="bottom-left-container">
-          <h3>May 2nd</h3>
+          <h4>May 2nd</h4>
           <p>03:00</p>
         </div>
       </Grid>

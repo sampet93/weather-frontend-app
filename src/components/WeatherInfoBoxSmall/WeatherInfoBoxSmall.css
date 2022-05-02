@@ -3,4 +3,28 @@
   border: var(--container-border-width) solid var(--color-edge);
   border-radius: var(--container-border-radius);
   margin: var(--container-margin) 0px;
+  min-width: var(--weatherinfo-small-min-width);
+}
+
+.top-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  width: 100%;
+}
+
+.bottom-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  background-color: var(--color-bg-light-blue);
+}
+
+.image-small {
+  width: 40px;
 }

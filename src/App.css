@@ -13,10 +13,20 @@ html {
   --color-bg-light-blue: #e5f6fd;
   --color-edge: #e6e6e6;
 
-  --container-max-width: 500px;
+  --font-size-p: 13px;
+  --font-size-h4: 15px;
+  --font-size-h3: 19px;
+  --font-size-h2: 23px;
+  --font-size-h1: 26px;
+
+  --container-max-width: 400px;
   --container-border-radius: 5px;
   --container-border-width: 1px;
-  --container-margin: 10px;
+  --container-margin: 5px;
+
+  --weatherinfo-big-height: 50px;
+  --weatherinfo-small-height: 30px;
+  --weatherinfo-small-min-width: 70px;
 }
 
 body {

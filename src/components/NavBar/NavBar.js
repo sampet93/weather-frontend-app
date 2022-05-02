@@ -4,7 +4,7 @@ import "./NavBar.css";
 const AppBar = ({ header }) => {
   return (
     <div className="top-header">
-      <h1>{header}</h1>
+      <h2>{header}</h2>
     </div>
   );
 };
