@@ -5,28 +5,20 @@ import WeatherInfoBoxBig from "../WeatherInfoBoxBig/WeatherInfoBoxBig";
 
 import "./WeatherInfo.css";
 
-const WeatherInfo = () => {
+const WeatherInfo = ({ weatherData, forecastData }) => {
   return (
     <Grid container justifyContent="center" flexDirection="row" className="weather-info-container">
       <Grid container xs={12} justifyContent="center">
-        <WeatherInfoBoxBig />
+        <WeatherInfoBoxBig weatherData={weatherData} />
       </Grid>
       <Grid container xs={12} flexDirection="row" justifyContent="space-between">
-        <Grid item xs="auto">
-          <WeatherInfoBoxSmall />
-        </Grid>
-        <Grid item xs="auto">
-          <WeatherInfoBoxSmall />
-        </Grid>
-        <Grid item xs="auto">
-          <WeatherInfoBoxSmall />
-        </Grid>
-        <Grid item xs="auto">
-          <WeatherInfoBoxSmall />
-        </Grid>
-        <Grid item xs="auto">
-          <WeatherInfoBoxSmall />
-        </Grid>
+        {forecastData.map((forecast, index) => {
+          return (
+            <Grid item xs="auto" key={index}>
+              <WeatherInfoBoxSmall forecast={forecast} />
+            </Grid>
+          );
+        })}
       </Grid>
     </Grid>
   );

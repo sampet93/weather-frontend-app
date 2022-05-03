@@ -9,7 +9,7 @@
   border-radius: var(--container-border-radius);
 }
 
-.test {
+.dropdown-select {
   font-size: var(--font-size-small);
   color: var(--color-text-dark);
   border: none;

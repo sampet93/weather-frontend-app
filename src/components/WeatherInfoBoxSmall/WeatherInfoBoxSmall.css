@@ -11,6 +11,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  border-bottom: var(--container-border-width) solid var(--color-edge);
+
   height: 100px;
   width: 100%;
 }

@@ -1,15 +1,22 @@
 import React from "react";
 import "./DropDown.css";
 
-const DropDown = () => {
+const DropDown = ({ selectHandler, items }) => {
   return (
     <div className="dropdown-container">
-      <select name="locations" id="locations" className="test">
-        <option value="all">Kaikki kaupungit</option>
-        <option value="tampere">Tampere</option>
-        <option value="jyvaskyla">Jyväskylä</option>
-        <option value="kuopio">Kuopio</option>
-        <option value="espoo">Espoo</option>
+      <select
+        onChange={(e) => selectHandler(Number(e.target.value))}
+        name="locations"
+        id="locations"
+        className="dropdown-select"
+      >
+        {items.map((city) => {
+          return (
+            <option value={city.id} key={city.id}>
+              {city.name}
+            </option>
+          );
+        })}
       </select>
     </div>
   );
