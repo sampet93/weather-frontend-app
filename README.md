@@ -13,6 +13,13 @@
 
 -API key is hidden through environment variables.
 
+## Project Screen Shots
+
+![alt text](./screenshots/1.png)
+
+![alt text](screenshots/2.png)
+
+
 ## Installation and Setup Instructions
 
 #### Example:  
