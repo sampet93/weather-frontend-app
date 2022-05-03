@@ -14,7 +14,7 @@ const WeatherInfo = ({ weatherData, forecastData }) => {
       <Grid container xs={12} flexDirection="row" justifyContent="space-between">
         {forecastData.map((forecast, index) => {
           return (
-            <Grid item xs="auto" key={index}>
+            <Grid key={index}>
               <WeatherInfoBoxSmall forecast={forecast} />
             </Grid>
           );

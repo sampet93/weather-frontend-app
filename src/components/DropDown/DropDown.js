@@ -5,6 +5,7 @@ const DropDown = ({ selectHandler, items }) => {
   return (
     <div className="dropdown-container">
       <select
+        defaultValue={items[1].id}
         onChange={(e) => selectHandler(Number(e.target.value))}
         name="locations"
         id="locations"
