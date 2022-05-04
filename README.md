@@ -11,7 +11,16 @@
 
 -App is deployed to Heroku and accessed through the link.
 
+-App uses simple custom nodeJS backend solution hosted in Heroku 
+
 -API key is hidden through environment variables.
+
+## Project Screen Shots
+
+![alt text](./screenshots/1.PNG)
+
+![alt text](screenshots/2.PNG)
+
 
 ## Installation and Setup Instructions
 
