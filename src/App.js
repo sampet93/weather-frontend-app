@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Grid } from "@mui/material";
+import { Grid, CircularProgress, Box } from "@mui/material";
 import NavBar from "./components/NavBar/NavBar";
 import DropDown from "./components/DropDown/DropDown";
 import WeatherInfo from "./components/WeatherInfo/WeatherInfo";
@@ -55,6 +55,8 @@ function App() {
   }, [selectedCity]);
 
   const handleSelected = (id) => {
+    setWeatherData(null);
+    setForecastData(null);
     cities.forEach((city) => {
       if (city.id === id) {
         setSelectedCity(city);
@@ -65,22 +67,22 @@ function App() {
   return (
     <>
       <NavBar header="Säätutka" />
-      {weatherData && forecastData ? (
-        <Grid container>
-          <Grid container xs={12} justifyContent="center">
-            <DropDown selectHandler={handleSelected} items={cities} defaultId={0} />
-          </Grid>
-          <Grid container xs={12} justifyContent="center">
-            {selectedCity.id === 0 ? (
+      <Grid container>
+        <Grid container xs={12} justifyContent="center">
+          <DropDown selectHandler={handleSelected} items={cities} defaultId={0} />
+        </Grid>
+        <Grid container xs={12} justifyContent="center">
+          {weatherData && forecastData ? (
+            selectedCity.id === 0 ? (
               weatherInfoObjects
             ) : (
               <WeatherInfo weatherData={weatherData} forecastData={forecastData} />
-            )}
-          </Grid>
+            )
+          ) : (
+            <CircularProgress />
+          )}
         </Grid>
-      ) : (
-        <p>Loading data...</p>
-      )}
+      </Grid>
     </>
   );
 }
