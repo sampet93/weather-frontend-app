@@ -1,11 +1,11 @@
 import React from "react";
 import "./DropDown.css";
 
-const DropDown = ({ selectHandler, items }) => {
+const DropDown = ({ selectHandler, items, defaultId }) => {
   return (
     <div className="dropdown-container">
       <select
-        defaultValue={items[1].id}
+        defaultValue={items[defaultId].id}
         onChange={(e) => selectHandler(Number(e.target.value))}
         name="locations"
         id="locations"

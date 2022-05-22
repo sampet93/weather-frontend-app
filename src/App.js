@@ -12,7 +12,7 @@ import "./App.css";
 function App() {
   const [weatherData, setWeatherData] = useState();
   const [forecastData, setForecastData] = useState();
-  const [selectedCity, setSelectedCity] = useState(cities[1]);
+  const [selectedCity, setSelectedCity] = useState(cities[0]);
   const [weatherInfoObjects, setWeatherInfoObjects] = useState();
 
   useEffect(() => {
@@ -32,6 +32,8 @@ function App() {
             if (city.id === 0) return null;
             const newWeatherData = await fetchCurrentWeatherData(city.id);
             const newForecastData = await fetchCurrentForecastData(city.id);
+            setWeatherData(newWeatherData);
+            setForecastData(newForecastData);
             return (
               <WeatherInfo
                 key={city.id}
@@ -41,7 +43,12 @@ function App() {
             );
           })
         );
-        setWeatherInfoObjects(objects);
+
+        setWeatherInfoObjects(
+          objects.filter((data) => {
+            return data !== null;
+          })
+        );
       };
       fetchAll();
     }
@@ -61,7 +68,7 @@ function App() {
       {weatherData && forecastData ? (
         <Grid container>
           <Grid container xs={12} justifyContent="center">
-            <DropDown selectHandler={handleSelected} items={cities} />
+            <DropDown selectHandler={handleSelected} items={cities} defaultId={0} />
           </Grid>
           <Grid container xs={12} justifyContent="center">
             {selectedCity.id === 0 ? (
