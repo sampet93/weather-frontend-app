@@ -3,7 +3,7 @@
 |             |                                                                                                                              |
 | ----------- | :--------------------------------------------------------------------------------------------------------------------------- |
 | Name        | Samuli Petäjistö                                                                                                             |
-| Description | Web application showing current weather and forecast of four different finnish cities. Uses free plan of the OpenWeather API |
+| Description | Web application showing current weather and forecast of different finnish cities. Uses free plan of the OpenWeather API |
 | Heroku link | https://weather-frontend-sampet.herokuapp.com/                                                                               |
 
 3.5.2022
